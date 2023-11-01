@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resources/icon.png" type="image">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/4592f70558.js" crossorigin="anonymous"></script>
+    <title>Newsest</title>
+</head>
+
+<body>
+    <div id="header">
+        <img id="logo" src="./resources/logo.png">
+        <div class="profile-container">
+            <img id="profile" src="./resources/profile.png">
+            <div id="hover-profile">
+                <div class="container-icon-profile">
+                    <img class="icon-profile" src="./resources/person.png">
+                    <p class="fill-icon-profile">Nama Akun</p>
+                </div>
+                <div class="container-icon-profile">
+                    <img class="icon-profile" src="./resources/save.png">
+                    <p class="fill-icon-profile">Berita yang disimpan</p>
+                </div>
+                <div class="container-icon-profile">
+                    <img class="icon-profile" src="./resources/like.png">
+                    <p class="fill-icon-profile">Berita yang disukai</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <nav class="navbar">
+        <a href="#tempo-fill">
+            <div class="shape">
+                <p class="fill-navbar">Tempo News</p>
+            </div>
+        </a>
+        <a href="#antara-fill">
+            <div class="shape">
+                <p class="fill-navbar">Antara News</p>
+            </div>
+        </a>
+        <a href="#cnn-fill">
+            <div class="shape">
+                <p class="fill-navbar">CNN News</p>
+            </div> 
+        </a>
+        <a href="#cnbc-fill">
+            <div class="shape">
+                <p class="fill-navbar">CNBC News</p>
+            </div>
+        </a>
+        <a href="#tribun-fill">
+            <div class="shape">
+                <p class="fill-navbar">Tribun News</p>
+            </div>
+        </a>
+        <a href="#vice-fill">
+            <div class="shape">
+                <p class="fill-navbar">Vice News</p>
+            </div>
+        </a>
+        <a href="#okezone-fill">
+            <div class="shape">
+                <p class="fill-navbar">Okezone News</p>
+            </div>
+        </a>
+    </nav>
+    <nav class="navbar">
+        <a href="#voa-fill">
+            <div class="shape">
+                <p class="fill-navbar">Voa News</p>
+            </div>
+        </a>
+        <a href="#suara-fill">
+            <div class="shape">
+                <p class="fill-navbar">Suara News</p>
+            </div>
+        </a>
+        <a href="#republika-fill">
+            <div class="shape2">
+                <p class="fill-navbar">Republika News</p>
+            </div>
+        </a>
+        <a href="#zetizen-jawapos-fill">
+            <div class="shape2">
+                <p class="fill-navbar">Zetizen JawaPos News</p>
+            </div>
+        </a>
+        <a href="#kumparan-fill">
+            <div class="shape2">
+                <p class="fill-navbar">Kumparan News</p>
+            </div>
+        </a>
+    </nav>
+    <a href="#header"><img id="back-button" src="./resources/back.png"></a>
+    <div id="latest-news-container">
+        <p id="title">BERITA TERKINI</p>
+    </div>
+    <div id="tempo-fill">
+        <p id="tempo-news">Tempo News</p>
+        <div id="berita-tempo-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="antara-fill">
+        <p id="antara-news">Antara News</p>
+        <div id="berita-antara-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="cnn-fill">
+        <p id="cnn-news">CNN News</p>
+        <div id="berita-cnn-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="cnbc-fill">
+        <p id="cnbc-news">CNBC News</p>
+        <div id="berita-cnbc-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="tribun-fill">
+        <div id="tribun">
+            <p id="tribun-news">Tribun News</p>
+            <ul>
+                <li>
+                    <p id="choose-area">Pilih Area</p>
+                    <ul class="dropdown">
+                        <li class="area" onclick="showArea('Makassar')">Makassar</li>
+                        <li class="area" onclick="showArea('Jakarta')">Jakarta</li>
+                        <li class="area" onclick="showArea('Jawa Barat')">Jawa Barat</li>
+                        <li class="area" onclick="showArea('Jawa Tengah')">Jawa Tengah</li>
+                        <li class="area" onclick="showArea('Jawa Timur')">Jawa Timur</li>
+                        <li class="area" onclick="showArea('Mataram')">Mataram</li>
+                        <li class="area" onclick="showArea('Mataraman')">Mataraman</li>
+                        <li class="area" onclick="showArea('Medan')">Medan</li>
+                        <li class="area" onclick="showArea('Padang')">Padang</li>
+                        <li class="area" onclick="showArea('Flores')">Flores</li>
+                        <li class="area" onclick="showArea('Sulawesi Barat')">Sulawesi Barat</li>
+                        <li class="area" onclick="showArea('Sulawesi Tenggara')">Sulawesi Tenggara</li>
+                        <li class="area" onclick="showArea('Ambon')">Ambon</li>
+                        <li class="area" onclick="showArea('Wartakota')">Wartakota</li>
+                        <li class="area" onclick="showArea('Bogor')">Bogor</li>
+                        <li class="area" onclick="showArea('Pantura')">Pantura</li>
+                        <li class="area" onclick="showArea('Madura')">Madura</li>
+                        <li class="area" onclick="showArea('Palembang')">Palembang</li>
+                        <li class="area" onclick="showArea('Pekanbaru')">Pekanbaru</li>
+                        <li class="area" onclick="showArea('Banjarmasin')">Banjarmasin</li>
+                        <li class="area" onclick="showArea('Pontianak')">Pontianak</li>
+                        <li class="area" onclick="showArea('Papua')">Papua</li>
+                        <li class="area" onclick="showArea('Papua Barat')">Papua Barat</li>
+                        <li class="area" onclick="showArea('Bekasi')">Bekasi</li>
+                        <li class="area" onclick="showArea('Cirebon')">Cirebon</li>
+                        <li class="area" onclick="showArea('Bali')">Bali</li>
+                        <li class="area" onclick="showArea('Jambi')">Jambi</li>
+                        <li class="area" onclick="showArea('Kalimantan Timur')">Kalimantan Timur</li>
+                        <li class="area" onclick="showArea('Kalimantan Tengah')">Kalimantan Tengah</li>
+                        <li class="area" onclick="showArea('Kalimantan Utara')">Kalimantan Utara</li>
+                        <li class="area" onclick="showArea('Palu')">Palu</li>
+                        <li class="area" onclick="showArea('Banten')">Banten</li>
+                        <li class="area" onclick="showArea('Aceh')">Aceh</li>
+                        <li class="area" onclick="showArea('Batam')">Batam</li>
+                        <li class="area" onclick="showArea('Sumatera Selatan')">Sumatera Selatan</li>
+                        <li class="area" onclick="showArea('Tangerang')">Tangerang</li>
+                        <li class="area" onclick="showArea('Solo')">Solo</li>
+                        <li class="area" onclick="showArea('Surabaya')">Surabaya</li>
+                        <li class="area" onclick="showArea('Prohaba')">Prohaba</li>
+                        <li class="area" onclick="showArea('Bangka')">Bangka</li>
+                        <li class="area" onclick="showArea('Belitung')">Belitung</li>
+                        <li class="area" onclick="showArea('Bangka Belitung')">Bangka Belitung</li>
+                        <li class="area" onclick="showArea('Lampung')">Lampung</li>
+                        <li class="area" onclick="showArea('Lombok')">Lombok</li>
+                        <li class="area" onclick="showArea('Depok')">Depok</li>
+                        <li class="area" onclick="showArea('Banyumas')">Banyumas</li>
+                        <li class="area" onclick="showArea('Suryamalang')">Suryamalang</li>
+                        <li class="area" onclick="showArea('Kupang')">Kupang</li>
+                        <li class="area" onclick="showArea('Manado')">Manado</li>
+                        <li class="area" onclick="showArea('Ternate')">Ternate</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="area">
+            <p id="area-name"></p>
+            <div id="area-fill"></div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div id="vice-fill">
+        <p id="vice-news">Vice News</p>
+        <div id="berita-vice-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="okezone-fill">
+        <p id="okezone-news">Okezone News</p>
+        <div id="berita-okezone-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="voa-fill">
+        <p id="voa-news">Voa News</p>
+        <div id="berita-voa-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="suara-fill">
+        <p id="suara-news">Suara News</p>
+        <div id="berita-suara-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="republika-fill">
+        <p id="republika-news">Republika News</p>
+        <div id="berita-republika-news"></div>
+    </div>
+    <div class="line"></div>
+    <div id="zetizen-jawapos-fill">
+        <div id="zetizen-jawapos">
+            <p id="zetizen-jawapos-news">Zetizen JawaPos News</p>
+            <ul>
+                <li>
+                    <p id="choose-category">Pilih Kategori</p>
+                    <ul class="dropdown">
+                        <li class="category" onclick="showCategory('Techno')">Techno</li>
+                        <li class="category" onclick="showCategory('Music')">Music</li>
+                        <li class="category" onclick="showCategory('Book')">Book</li>
+                        <li class="category" onclick="showCategory('Movie')">Movie</li>
+                        <li class="category" onclick="showCategory('Tv-series')">Tv-series</li>
+                        <li class="category" onclick="showCategory('Beauty')">Beauty</li>
+                        <li class="category" onclick="showCategory('Trend')">Trend</li>
+                        <li class="category" onclick="showCategory('Food-and-traveling')">Food-and-Traveling</li>
+                        <li class="category" onclick="showCategory('Games')">Games</li>
+                        <li class="category" onclick="showCategory('Otomodif')">Otomodif</li>
+                        <li class="category" onclick="showCategory('Sport-and-health')">Sport-and-health</li>
+                        <li class="category" onclick="showCategory('After-school')">After-school</li>
+                        <li class="category" onclick="showCategory('Career-coach')">Career-coach</li>
+                        <li class="category" onclick="showCategory('Dear-you')">Dear-you</li>
+                        <li class="category" onclick="showCategory('Get-a-life')">Get-a-life</li>
+                        <li class="category" onclick="showCategory('Scholarship-info')">Scholarship-info</li>
+                        <li class="category" onclick="showCategory('Science')">Science</li>
+                        <li class="category" onclick="showCategory('Zetizen-national-challenge')">Zetizen-national-challenge</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="category">
+            <p id="category-name"></p>
+            <div id="category-fill"></div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div id="kumparan-fill">
+        <p id="kumparan-news">Kumparan News</p>
+        <div id="berita-kumparan-news"></div>
+    </div>
+    <footer id="container-footer">
+        <img id="logo-footer" src="./resources/logo2.png">
+        <a id="copyright">Copyright &copy; 2023 All rights reserved</a>
+        <div id="follow-us-container">
+            <p id="follow-us">Follow Us:</p>
+            <img class="icon" src="./resources/fb.png">
+            <img class="icon" src="./resources/ig.png">
+            <img class="icon" src="./resources/tw.png">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

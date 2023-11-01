@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
+
+body {
+    background-color: #FFF9ED;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 150px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#profile {
+    width: 33px;
+    padding-left: 20px;
+    display: flex;
+    justify-items: end;
+    cursor: pointer;
+}
+
+.navbar {
+    height: 40px;
+    background-color: #49888A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    background-color: #49888A;
+    height: 3px;
+    margin-top: 30px;
+}
+
+.fill-navbar {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF9ED;
+    font-weight: 500;
+}
+
+#back-button {
+    position: fixed;
+    width: 50px;
+    bottom: 20px;
+    right:20px;
+}
+
+.shape {
+    width: 150px;
+}
+
+.shape2 {
+    width: 200px;
+}
+
+.shape, .shape2 {
+    height: 40px;
+    background-color: #49888A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.shape:hover, .shape2:hover {
+    background-color: #FFF9ED;
+} 
+
+.shape:hover > .fill-navbar, .shape2:hover > .fill-navbar {
+    color: #49888A;
+}
+
+#latest-news-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: underline #9DCFCE;
+    text-underline-offset: 7px;
+    color: #49888A;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+#tempo-fill, #antara-fill, #cnn-fill, #cnbc-fill, #tribun-fill,
+#vice-fill, #okezone-fill, #voa-fill, #suara-fill, #republika-fill,
+#zetizen-jawapos-fill, #kumparan-fill {
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-news {
+    margin-top:20px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+.latest-news-picture {
+    width: 330px;
+}
+
+.latest-news-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 15px;
+    color: #878787;
+}
+
+.latest-news-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.latest-news-fill {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 5px;
+    text-align: justify;
+    color: #5A5A5A;
+}
+
+#berita-antara-news, #berita-cnn-news, #berita-cnbc-news, #berita-vice-news, 
+#berita-okezone-news, #berita-voa-news, #berita-suara-news, 
+#berita-republika-news, #area-fill, #category-fill, #berita-kumparan-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#berita-tempo-news {
+    overflow-y: scroll;
+    height: 550px;
+}
+
+#category-name, #area-name {
+    font-family: 'Poppins', sans-serif;
+    color: #5A5A5A;
+    font-size: 20px;
+    margin: 0;
+}
+
+#tempo-news, #antara-news, #cnn-news, #cnbc-news, #vice-news,
+#okezone-news, #voa-news, #suara-news, #republika-news, #kumparan-news {
+    font-family: 'Poppins', sans-serif;
+    color: #5A5A5A;
+    text-decoration: underline #49888A;
+    text-underline-offset: 7px;
+    font-size: 25px;
+    margin: 0;
+}
+
+#tribun-news, #zetizen-jawapos-news {
+    font-family: 'Poppins', sans-serif;
+    color: #5A5A5A;
+    text-decoration: underline #49888A;
+    text-underline-offset: 7px;
+    font-size: 25px;
+    margin: 0;
+    align-self: center;
+}
+
+.read-more {
+    font-family: 'Poppins', sans-serif;
+    color: #49888A;
+    text-align: end;
+    margin: 0;
+    margin-top: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.read-more:hover {
+    color: #5A5A5A;
+}
+
+#container-footer {
+    margin-top: 20px;
+    height: 60px;
+    background-color: #49888A;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-footer {
+    margin-left: 75px;
+}
+
+#copyright {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF9ED;
+    font-size: 15px;
+    align-self: center;
+}
+
+#follow-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 75px;
+}
+
+#follow-us {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #FFF9ED;
+}
+
+.icon {
+    width: 33px;
+    height: 33px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.icon-profile {
+    width: 25px;
+    height: 25px;
+}
+
+.container-icon-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: #FFF9ED;
+}
+
+.fill-icon-profile {
+    font-family: 'Poppins', sans-serif;
+    color: #49888A;
+}
+
+#hover-profile {
+    box-shadow: 0px 0px 10px #5A5A5A;
+    width: 250px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 43px;
+    display: none;
+    overflow: hidden;
+}
+
+#profile:hover + #hover-profile {
+    display: block;
+}
+
+#tribun, #zetizen-jawapos {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    background: #49888A;
+    padding: 0;
+    
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+}
+
+#choose-area, .area {
+    display: block;
+    padding: 10px 15px;
+    color: #FFF9ED;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;   
+    margin: 0;
+}
+
+#choose-category, .category {
+    display: block;
+    padding: 10px 15px;
+    color: #FFF9ED;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;   
+    margin: 0;
+}
+
+.category {
+    text-align: left;
+}
+
+.area {
+    text-align: left;
+}
+
+.dropdown {
+    width: 100%;
+    background: #49888A;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 300px;
+}
+
+#choose-area:hover, .area:hover {
+    background: #9DCFCE;
+    cursor: pointer;
+}
+
+#choose-category:hover, .category:hover {
+    background: #9DCFCE;
+    cursor: pointer;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.liked-news, .saved-news {
+    width: 20px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.options-news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
